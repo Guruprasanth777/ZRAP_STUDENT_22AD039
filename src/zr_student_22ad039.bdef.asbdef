@@ -1,0 +1,31 @@
+managed implementation in class zbp_zstudent_22ad039 unique;
+strict ( 2 );
+define behavior for ZR_STUDENT_22AD039 //alias <alias_name>
+persistent table zstudent_22ad039
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+create;
+update;
+delete;
+// Fields for the Student entity
+field ( numbering : managed, readonly ) Id;
+
+
+// Mapping for fields to the persistent table zstudent_22ad039 student
+mapping for zstudent_22ad039
+{
+Id = id;
+Firstname = firstname;
+Lastname  = lastname;
+Age = age;
+Course  = course;
+Courseduration = courseduration;
+Status = status;
+Gender = gender;
+Dob = dob;
+Lastchangedat = lastchangedat;
+Locallastchangedat = locallastchangedat;
+}
+}
